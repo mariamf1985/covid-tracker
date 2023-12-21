@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { RiPieChartLine } from "react-icons/ri";
 import { TiThMenuOutline,TiThLargeOutline } from "react-icons/ti";
 import { TfiLayoutTab,TfiLayersAlt,TfiStatsUp } from "react-icons/tfi";
@@ -11,52 +12,52 @@ const NavbarTracker = () => {
     <nav className="flex flex-col  items-center h-screen w-20  bg-primarybackground">
        <ul className="h-full flex flex-col items-center justify-around">
         <li>
-          <a href="">
+          <Link to="/">
           <img src="../src/assets/images/coronavirus.png"  className="animate-spin-slow w-12 mt-3 mb-3"></img>
-          </a>
+          </Link>
         </li>
         <li className="text-secondarybg hover:bg-secondarybg hover:text-primarybackground w-full p-4 rounded">
-          <a href="">
+          <Link to="/tracker-1">
             <RiPieChartLine size={27}/>
-          </a>
+          </Link>
         </li>
         <li className="text-secondarybg hover:bg-secondarybg hover:text-primarybackground w-full p-4 rounded">
-          <a href="">
+          <Link to="/tracker-2">
             <TiThMenuOutline size={27}/>
-          </a>
+          </Link>
         </li>
         <li className="text-secondarybg hover:bg-secondarybg hover:text-primarybackground w-full p-4 rounded">
-          <a href="">
+          <Link to="/tracker-3">
             <TiThLargeOutline size={27}/>
-          </a>
+          </Link>
         </li>
         <li className="text-secondarybg hover:bg-secondarybg hover:text-primarybackground w-full p-4 rounded">
-          <a href="">
+          <a>
             <TfiLayoutTab size={25}/>
           </a>
         </li>
         <li className="text-secondarybg hover:bg-secondarybg hover:text-primarybackground w-full p-4 rounded">
-          <a href="">
+          <a>
             <TfiLayersAlt size={25}/>
           </a>
         </li>
         <li className="text-secondarybg hover:bg-secondarybg hover:text-primarybackground w-full p-4 rounded">
-          <a href="">
+          <a>
             <TfiStatsUp size={27}/>
           </a>
         </li>
         <li className="text-secondarybg hover:bg-secondarybg hover:text-primarybackground w-full p-4 rounded">
-          <a href="">
+          <a>
             <AiOutlineGlobal size={27}/>
           </a>
         </li>
         <li className="text-secondarybg hover:bg-secondarybg hover:text-primarybackground w-full p-4 rounded">
-          <a href="">
+          <a>
             <FaRegCommentAlt size={25}/>
           </a>
         </li>
         <li className="text-secondarybg hover:bg-secondarybg hover:text-primarybackground w-full p-4 rounded">
-          <a href="">
+          <a>
             <IoLogoFlickr size={27}/>
           </a>
         </li>
