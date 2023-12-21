@@ -10,7 +10,7 @@ import { IoLogoFlickr } from "react-icons/io5";
 
 
 const NavbarTracker = () => {
-  
+
   const [activeNavItem, setActiveNavItem] = useState(null);
 
   const handleNavItemClick = (navItem) => {
@@ -18,8 +18,8 @@ const NavbarTracker = () => {
   };
 
   const getNavItemStyle = (navItem) => {
-    const baseStyle = "text-secondarybg hover:bg-secondarybg hover:text-primarybackground w-full p-4 rounded";
-    return activeNavItem === navItem ? 'bg-secondarybg text-primarybackground w-full p-4 rounded' : baseStyle;
+    const baseStyle = "text-secondarybg hover:bg-secondarybg hover:text-primarybackground w-full p-4 rounded transition duration-500";
+    return activeNavItem === navItem ? 'bg-secondarybg text-primarybackground w-full p-4 rounded transition duration-500' : baseStyle;
   };
 
   return (
