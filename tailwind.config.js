@@ -19,6 +19,9 @@ export default {
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',
+      },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
       }
     },
   },
