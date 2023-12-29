@@ -29,11 +29,9 @@ const NavbarTracker = () => {
 
   return (
     <nav className="flex flex-col items-center h-screen w-20 bg-primarybackground">
-      <ul className="h-full flex flex-col items-center justify-around">
-        <li>
-          <Link to="/">
+      <ul className="h-full flex flex-col items-center justify-around cursor-pointer	">
+        <li onClick={() => handleNavItemClick("")}>
             <img src="../src/assets/images/coronavirus.png" className="animate-spin-slow w-12 mt-3 mb-3" alt="Coronavirus" />
-          </Link>
         </li>
         <li onClick={() => handleNavItemClick("tracker-1")} className={getNavItemStyle("tracker-1")} >
             <RiPieChartLine size={27} />
