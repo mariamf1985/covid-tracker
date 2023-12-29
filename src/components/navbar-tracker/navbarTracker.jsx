@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { RiPieChartLine } from "react-icons/ri";
 import { TiThMenuOutline,TiThLargeOutline } from "react-icons/ti";
@@ -10,11 +10,16 @@ import { IoLogoFlickr } from "react-icons/io5";
 
 
 const NavbarTracker = () => {
+  const navigate = useNavigate()
 
+  const navigationClickEvent = (navItem) => {
+    navigate(`/${navItem}`)
+  }
   const [activeNavItem, setActiveNavItem] = useState(null);
 
   const handleNavItemClick = (navItem) => {
     setActiveNavItem(navItem);
+    navigationClickEvent(navItem);
   };
 
   const getNavItemStyle = (navItem) => {
@@ -31,19 +36,13 @@ const NavbarTracker = () => {
           </Link>
         </li>
         <li onClick={() => handleNavItemClick("tracker-1")} className={getNavItemStyle("tracker-1")} >
-          <Link to="/tracker-1">
             <RiPieChartLine size={27} />
-          </Link>
         </li>
         <li onClick={() => handleNavItemClick("tracker-2")} className={getNavItemStyle("tracker-2")} >
-          <Link to="/tracker-2">
             <TiThMenuOutline size={27}/>
-          </Link>
         </li>
         <li onClick={() => handleNavItemClick("tracker-3")} className={getNavItemStyle("tracker-3")} >
-          <Link to="/tracker-3">
             <TiThLargeOutline size={27}/>
-          </Link>
         </li>
         <li className="text-secondarybg hover:bg-secondarybg hover:text-primarybackground w-full p-4 rounded">
           <a>
