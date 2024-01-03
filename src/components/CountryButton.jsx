@@ -2,7 +2,7 @@ import React from 'react'
 
 const CountryButton = () => {
     return (
-        <button class="flex items-center border text-blue-900 px-3 py-2">
+        <button class="flex items-center border text-primaryLetterColor px-3 py-2">
             <div class="rounded-full overflow-hidden mr-2">
       
       <img src="" class="w-8 h-8"/>
