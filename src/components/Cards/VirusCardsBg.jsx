@@ -7,17 +7,17 @@ import covidO from '../../../src/assets/images/icons/covid-orange.svg';
 import covidRD from '../../../src/assets/images/icons/covid-redark.svg';
 import covidB from '../../../src/assets/images/icons/covid-blue.svg';
 
-const VirusCardsBg = () => {
+const VirusCardsBg = ({selectCountrie}) => {
   return (
     <div>
       
         <div className='flex flex-wrap'>
-           <VirusCardBackground title="Total Cases" value="1234567" valueColor="#3639AE" image={covid} />
-           <VirusCardBackground title="Total Deaths" value="1234567" valueColor="#FF0000" image={covidR} />
-           <VirusCardBackground title="Total Recovered" value="1234567" valueColor="#82C519" image={covidG} />
-           <VirusCardBackground title="Total Active" value="1234567" valueColor="#2C6DFF" image={covidB} />
-           <VirusCardBackground title="New Cases" value="1234567" valueColor="#FF6A07" image={covidO} />
-           <VirusCardBackground title="New Deaths" value="1234567" valueColor="#B70202" image={covidRD} />
+           <VirusCardBackground title="Total Cases" value={selectCountrie.cases} valueColor="#3639AE" image={covid} />
+           <VirusCardBackground title="Total Deaths" value={selectCountrie.deaths} valueColor="#FF0000" image={covidR} />
+           <VirusCardBackground title="Total Recovered" value={selectCountrie.recovered} valueColor="#82C519" image={covidG} />
+           <VirusCardBackground title="Total Active" value={selectCountrie.active} valueColor="#2C6DFF" image={covidB} />
+           <VirusCardBackground title="New Cases" value={selectCountrie.todayCases} valueColor="#FF6A07" image={covidO} />
+           <VirusCardBackground title="New Deaths" value={selectCountrie.todayDeaths} valueColor="#B70202" image={covidRD} />
         </div>
       
     </div>
