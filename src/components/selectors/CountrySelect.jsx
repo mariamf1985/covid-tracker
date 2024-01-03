@@ -1,12 +1,15 @@
 import React from 'react';
+import UseFetch from '../../services/UseFetch.jsx';
 
-const CountrySelect = ({ countries, onSelect }) => {
+const CountrySelect = () => {
+  const url = "https://disease.sh/v3/covid-19/countries/";
+  const {data} = UseFetch(url);
   return (
     <>
-      <select id="countrySelect" onChange={onSelect}>
+      <select id="countrySelect">
         <option value="">Selecciona un país</option>
-        {countries.map(country => (
-          <option key={country} value={country}>{country}</option>
+        {data?.map(country => (
+          <option key={country.country} value={country.country}>{country.country}</option>
         ))}
       </select>
     </>
