@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VirusCardBackground = ({ title, value, image, valueColor }) => {
+const VirusCardBackground = ({ title, value = 0, image, valueColor }) => {
   const valueStyle = { color: valueColor };
   return (
     <div className='bg-white w-52 h-24 relative overflow-hidden rounded-sm shadow-md m-3.5'>
