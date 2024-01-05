@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import './CountrySelect.css'
-import UseFetch from '../../services/UseFetch.jsx';
+import React from 'react';
+import './CountrySelect.css';
 
 const CountrySelect = ({countries = [] , updateSelectedCountry}) => {
   return (
