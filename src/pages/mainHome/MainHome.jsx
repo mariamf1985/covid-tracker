@@ -28,18 +28,18 @@ const MainHome = () => {
           <button className="protect-btn">How to protect</button>
         </div>
         <div className="image-content">
-        <img src="../../assets/images/phones.png"/>
+        <img src="./src/assets/images/phones.png"/>
 
         </div>
       </div>
       <footer className="footer">
         <div className="footer-icons">
-          <img src="icon1.png" alt="Icon 1" />
-          <img src="icon2.png" alt="Icon 2" />
-          <img src="icon3.png" alt="Icon 3" />
-          <img src="icon4.png" alt="Icon 4" />
-          <img src="icon5.png" alt="Icon 5" />
-          <img src="icon6.png" alt="Icon 6" />
+          <img src="./src/assets/images/f1.png" />
+          <img src="./src/assets/images/f2.png" />
+          <img src="./src/assets/images/f3.png" />
+          <img src="./src/assets/images/f4.png" />
+          <img src="./src/assets/images/f5.png" />
+          <img src="./src/assets/images/f1.png" />
         </div>
       </footer>
     </div>

@@ -81,11 +81,18 @@ body, html {
   
   .image-content {
     width: 50%;
-  }
-  
-  .image-content img {
-    margin: auto;
-  }
+    float: right; 
+}
+
+.image-content img {
+    margin-top: 20px;
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+}
+
   
   .footer {
     background: white;
@@ -100,6 +107,12 @@ body, html {
   
   .footer-icons {
     display: flex;
-    gap: 16px;
+    flex-wrap: wrap;
+}
+
+  .footer-icons > * {
+      margin: 0 100px;
   }
+
+
   
