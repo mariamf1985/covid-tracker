@@ -1,11 +1,11 @@
 import './App.css'
-import VirusCardIcon from './components/Cards/VirusCardIcon'
+import VirusCardsIcons from './components/Cards/VirusCardsIcons'
 
 function App() {
 
   return (
     <>
-     <VirusCardIcon />
+      <VirusCardsIcons/>
     </>
   )
 }
