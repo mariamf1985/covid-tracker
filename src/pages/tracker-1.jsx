@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import UseFetch from '../services/UseFetch'
 import CountrySelect from '../components/selectors/CountrySelect'
 import VirusCardsBg from '../components/Cards/VirusCardsBg'
+import VirusCardsIcons from '../components/Cards/VirusCardsIcons'
 
 const Tracker1 = () => {
     const [selectedCountry, setSelectedCountry] = useState({});
@@ -23,8 +24,8 @@ const Tracker1 = () => {
   return (
     <>
         {!loading  ? <CountrySelect countries={data} chooseCountry={updateSelectedCountry}/> : <p className='font-bold'>Loading...</p>}
-        {/*!globalCases.loading ? <virusCards propiedad={globalCases.data}> : <virusCards propiedad={}>*/}
         <VirusCardsBg selectCountry={selectedCountry}/>
+        {!globalCases.loading ? <VirusCardsIcons allCases={globalCases.data}/> : <VirusCardsIcons allCases={{}}/>}
     </>
   )
 }
