@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import CountryButton from './components/CountryButton'
+import CountryButton from './components/buttons/CountryButton'
 
 function App() {
 
