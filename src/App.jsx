@@ -1,11 +1,12 @@
-
+import { useState } from 'react'
 import './App.css'
-import React from 'react'
-import MainHome from './pages/mainHome/MainHome.jsx' 
+import CountryButton from './components/buttons/CountryButton'
+
 function App() {
+
   return (
     <>
-     <MainHome/> 
+      <CountryButton/>
     </>
   )
 }
