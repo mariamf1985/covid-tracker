@@ -1,8 +1,33 @@
-# React + Vite
+# Covid Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Covid Tracker es una aplicación web desarrollada con JavaScript, React, Tailwind y CSS. Esta aplicación permite a los usuarios rastrear los casos de Covid-19 en tiempo real.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías utilizadas
+
+- JavaScript
+- React
+- Tailwind
+- CSS
+
+## Guía de instalación
+
+1. Clona el repositorio en tu máquina local utilizando `git clone`.
+2. Navega hasta el directorio del proyecto.
+3. Instala las dependencias del proyecto con `npm install`.
+4. Inicia la aplicación con `npm start`. La aplicación ahora debería estar corriendo en `localhost:3000`.
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+
+## Autoras
+
+Este proyecto ha sido creado por:
+
+- Nathalia Ruiz
+- Maria Garcia
+- Maria Mendez
+- Marta Parra
