@@ -3,9 +3,9 @@ import React from 'react';
 const VirusCardBackground = ({ title, value = 0, image, valueColor }) => {
   const valueStyle = { color: valueColor };
   return (
-    <div className='bg-white w-52 h-24 relative overflow-hidden rounded-sm shadow-md m-3.5'>
+    <div className='bg-white w-52 h-24 max-[600px]:w-44  relative overflow-hidden rounded-sm shadow-md '>
 
-      <div className='absolute bottom-2 -right-6 w-28 h-28 opacity-10'>
+      <div className='absolute bottom-2 -right-6 w-28 h-28 opacity-10 max-[600px]:bottom-0'>
         <img src={image} alt='covid' className='w-full h-full object-cover' />
       </div>
 

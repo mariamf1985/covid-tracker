@@ -2,7 +2,7 @@ import React from 'react'
 
 const VirusCardIcon = ({ title, value = 0, image }) => {
   return (
-    <div className='bg-white flex w-48 h-20 relative overflow-hidden rounded-sm shadow-md '>
+    <div className='bg-white flex w-48  max-[600px]:w-[182px] h-20 relative overflow-hidden rounded-sm shadow-md '>
 
         <div className='w-[70px] h-full flex items-center justify-center'>
         <img src={image} alt='covid' className=' w-10 h-10 object-cover' />

@@ -11,7 +11,7 @@ const VirusCardsBg = ({selectCountry}) => {
   return (
     <div>
       
-        <div className='flex flex-wrap'>
+        <div className='flex flex-wrap sm:gap-6 max-[600px]:gap-3 pt-3.5'>
            <VirusCardBackground title="Total Cases" value={selectCountry.cases} valueColor="#3639AE" image={covid} />
            <VirusCardBackground title="Total Deaths" value={selectCountry.deaths} valueColor="#FF0000" image={covidR} />
            <VirusCardBackground title="Total Recovered" value={selectCountry.recovered} valueColor="#82C519" image={covidG} />
