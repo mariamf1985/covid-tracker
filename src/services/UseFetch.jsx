@@ -10,6 +10,7 @@ const UseFetch = (url) => {
             console.log(response)
             let responseJson = await response.json()
             setData(responseJson)
+            setLoading(false);
         }
         getData(url)
     }, [url]);
