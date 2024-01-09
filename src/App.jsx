@@ -2,9 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import Board from './components/navbar-tracker/board/Board'
 
+import React from 'react'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
     <Board/>
