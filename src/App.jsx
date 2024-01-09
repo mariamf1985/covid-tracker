@@ -1,11 +1,12 @@
 
 import './App.css'
+import NavbarTracker from './components/navbar-tracker/navbarTracker'
+
 import React from 'react'
-import MainHome from './pages/mainHome/MainHome.jsx' 
 function App() {
   return (
     <>
-     <MainHome/> 
+      <NavbarTracker/>
     </>
   )
 }
