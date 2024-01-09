@@ -1,11 +1,9 @@
-import { useState } from 'react'
+
 import './App.css'
 import NavbarTracker from './components/navbar-tracker/navbarTracker'
 
-
+import React from 'react'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <NavbarTracker/>
