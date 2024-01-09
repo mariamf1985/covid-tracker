@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 
 const UseFetch = (url) => {
     const [data, setData] = useState(null)
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const getData = async (url) => {
@@ -12,7 +13,7 @@ const UseFetch = (url) => {
         }
         getData(url)
     }, [url]);
-    return {data}
+    return {data, loading}
 }
 
 export default UseFetch

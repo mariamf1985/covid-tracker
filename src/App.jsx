@@ -1,12 +1,12 @@
-import { useState } from 'react'
 import './App.css'
-import CountryButton from './components/buttons/CountryButton'
+import React from 'react'
+import Tracker2 from './pages/tracker-2/tracker-2'
 
 function App() {
 
   return (
     <>
-      <CountryButton/>
+      <Tracker2/>
     </>
   )
 }
