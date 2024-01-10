@@ -34,8 +34,6 @@ body, html {
   .nav-links {
     display: flex;
     gap: 16px;
-    justify-content: center;
-    align-items: baseline;
   }
   
   .nav-links a {
