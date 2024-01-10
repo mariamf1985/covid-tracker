@@ -1,11 +1,6 @@
 <img src="./src/assets/images/coronavirus.png" style="animation: spin 4s linear infinite;">
-<style>
-@keyframes spin {
-  from {transform:rotate(0deg);}
-  to {transform:rotate(360deg);}
-}
-</style>
-<h1 class=“text-6xl bg-gradient-to-r from-blue-500 to-violet-500”>Covid Tracker</h1>
+
+<h1>Covid Tracker</h1>
 
 ## 💬Descripción
 Covid Tracker es una aplicación web desarrollada con JavaScript, React, Tailwind y CSS. Esta aplicación permite a los usuarios rastrear los casos de Covid-19 en tiempo real.
