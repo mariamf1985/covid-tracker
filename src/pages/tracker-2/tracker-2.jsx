@@ -32,41 +32,42 @@ const Tracker2 = () => {
     }, [data]);
 
     return (
-        <div className='bg-colorCard3'>
-            <h2 className='text-primaryLetterColor font-bold'>Top 10 Country wise Covid-19 Updates - Tiles</h2>
-            <div className='flex flex-row'>
+        <div className='float-right bg-colorCard3 p-2'>
+            <h2 className='text-primaryLetterColor text-xl font-bold border-b-2 p-2 
+            '>Top 10 Country wise Covid-19 Updates - Tiles</h2>
+            <div className='flex flex-row pt-4'>
                 <div className='flex flex-col'>
-                    <h3 className='text-primaryLetterColor'>Top Cases</h3>
+                    <h3 className='text-primaryLetterColor text-sm font-bold'>Top Cases</h3>
                     {countriesByCases.map(countryInfo => (
                         <CountryButton key={countryInfo.country} image={countryInfo.countryInfo.flag} country={countryInfo.country} value={countryInfo.cases} />
                     ))}
                 </div>
                 <div className='flex flex-col'>
-                    <h3 className='text-primaryLetterColor'>Today Cases</h3>
+                    <h3 className='text-primaryLetterColor text-sm font-bold'>Today Cases</h3>
                     {countriesByTodayCases.map(countryInfo => (
                         <CountryButton key={countryInfo.country} image={countryInfo.countryInfo.flag} country={countryInfo.country} value={countryInfo.todayCases} />
                     ))}
                 </div>
                 <div className='flex flex-col'>
-                    <h3 className='text-primaryLetterColor'>Top Deaths</h3>
+                    <h3 className='text-primaryLetterColor text-sm font-bold'>Top Deaths</h3>
                     {countriesByDeaths.map(countryInfo => (
                         <CountryButton key={countryInfo.country} image={countryInfo.countryInfo.flag} country={countryInfo.country} value={countryInfo.deaths} />
                     ))}
                 </div>
                 <div className='flex flex-col'>
-                    <h3 className='text-primaryLetterColor'>Today Deaths</h3>
+                    <h3 className='text-primaryLetterColor text-sm font-bold'>Today Deaths</h3>
                     {countriesByTodayDeaths.map(countryInfo => (
                         <CountryButton key={countryInfo.country} image={countryInfo.countryInfo.flag} country={countryInfo.country} value={countryInfo.todayDeaths} />
                     ))}
                 </div>
                 <div className='flex flex-col'>
-                    <h3 className='text-primaryLetterColor'>Top Active</h3>
+                    <h3 className='text-primaryLetterColor text-sm font-bold'>Top Active</h3>
                     {countriesByActive.map(countryInfo => (
                         <CountryButton key={countryInfo.country} image={countryInfo.countryInfo.flag} country={countryInfo.country} value={countryInfo.active} />
                     ))}
                 </div>
                 <div className='flex flex-col'>
-                    <h3 className='text-primaryLetterColor'>Top Recover</h3>
+                    <h3 className='text-primaryLetterColor text-sm font-bold'>Top Recover</h3>
                     {countriesByRecovered.map(countryInfo => (
                         <CountryButton key={countryInfo.country} image={countryInfo.countryInfo.flag} country={countryInfo.country} value={countryInfo.recovered} />
                     ))}
