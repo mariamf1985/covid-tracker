@@ -1,33 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
 import './App.css'
+import NavbarTracker from './components/navbar-tracker/NavbarTracker'
+import AtomsBoard from '.././src/components/AtomsBoard/AtomsBoard'
+import MoleculesBoard from '.././src/components/MoleculesBoard/MoleculesBoard'
+import Traker3 from '../src/pages/tracker-3/Traker-3'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <NavbarTracker/>
+    {/* <AtomsBoard/> */}
+    {/* <MoleculesBoard></MoleculesBoard> */}
+    <Traker3/>
     </>
   )
 }
