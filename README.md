@@ -1,4 +1,4 @@
-<img src=“./src/assets/images/iconoreact.png”>
+<img src="./src/assets/images/iconoreact.png">
 
 <h1 class=“text-6xl bg-gradient-to-r from-blue-500 to-violet-500”>Covid Tracker</h1>
 
@@ -6,11 +6,11 @@
 Covid Tracker es una aplicación web desarrollada con JavaScript, React, Tailwind y CSS. Esta aplicación permite a los usuarios rastrear los casos de Covid-19 en tiempo real.
 
 ## Tecnologías utilizadas
--JavaScript
--React
--Tailwind
--CSS
--React Table
+1. JavaScript
+2. React
+3. Tailwind
+4. CSS
+5. React Table
 
 ## Guía de instalación
 
