@@ -1,18 +1,23 @@
-<img src="./src/assets/images/iconoreact.png">
-
+<img src="./src/assets/images/coronavirus.png" style="animation: spin 4s linear infinite;">
+<style>
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+</style>
 <h1 class=“text-6xl bg-gradient-to-r from-blue-500 to-violet-500”>Covid Tracker</h1>
 
-## Descripción
+## 💬Descripción
 Covid Tracker es una aplicación web desarrollada con JavaScript, React, Tailwind y CSS. Esta aplicación permite a los usuarios rastrear los casos de Covid-19 en tiempo real.
 
-## Tecnologías utilizadas
+## 🔭Tecnologías utilizadas
 1. JavaScript
 2. React
 3. Tailwind
 4. CSS
 5. React Table
 
-## Guía de instalación
+## 📋Guía de instalación 
 
 1. Clona el repositorio en tu máquina local utilizando `git clone`.
 2. Navega hasta el directorio del proyecto.
@@ -21,18 +26,18 @@ Covid Tracker es una aplicación web desarrollada con JavaScript, React, Tailwin
 5. Instala react table con `npm i react-table`.
 6. Importa el hook useTable desde react-table en el archivo donde quieras usar la tabla.
 
-## API utilizada
+##  💻API utilizada
 [disease.sh]: Es una API abierta y gratuita que ofrece información actualizada sobre varios virus, incluyendo el coronavirus. La API tiene varios puntos de acceso que devuelven datos sobre los casos, las muertes, las vacunas, y más, a nivel mundial, por países, o por regiones. Para integrar la API en el proyecto se ha usado el hook useEffect de React para obtener los datos al cargar la página.
 
-## Licencia
+## 📚Licencia
 
 Este proyecto está licenciado bajo la Licencia MIT. 
 
-## Autoras
+## ✒️Autoras
 
 Este proyecto ha sido creado por:
 
-- Nathalia Ruiz
-- Maria Garcia
-- Maria Mendez
-- Marta Parra
+- 🐈‍⬛ Nathalia Ruiz
+- 🎨Maria Garcia
+- 🌈Maria Mendez
+- 🧠Marta Parra
