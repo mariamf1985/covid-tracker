@@ -15,10 +15,14 @@ export default {
         'colorCard3' : '#EDFFEC',
         'colorCard4' : '#F4FCFF',
         'bisque' : '#FFE4C4',
-
+        'quarteryLetterColor' : '#FF6A07',
+        'quinaryLetterColor' : '#B70202',
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',
+      },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
       }
     },
     extend: {

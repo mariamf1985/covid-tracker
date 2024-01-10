@@ -7,6 +7,7 @@ import Traker3 from '../src/pages/tracker-3/Traker-3'
 
 
 function App() {
+
   return (
     <>
     <NavbarTracker/>
