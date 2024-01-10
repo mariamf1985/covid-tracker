@@ -1,12 +1,14 @@
-import { useState } from 'react'
-import './App.css'
-import Board from './components/navbar-tracker/board/Board'
-
 import React from 'react'
+import './App.css'
+import AtomsBoard from '.././src/components/AtomsBoard/AtomsBoard'
+import MoleculesBoard from '.././src/components/MoleculesBoard/MoleculesBoard'
+
+
 function App() {
   return (
     <>
-    <Board/>
+    <AtomsBoard/>
+    <MoleculesBoard></MoleculesBoard>
     </>
   )
 }

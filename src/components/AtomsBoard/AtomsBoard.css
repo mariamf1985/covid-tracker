@@ -1,0 +1,8 @@
+.rdt_TableRow:nth-child(odd ){
+    background-color: #f8f9fe;
+    color: #1712A6;
+  }
+  
+  img{
+    width: 35px;
+  }
