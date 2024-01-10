@@ -4,8 +4,8 @@ import AtomsBoard from "../AtomsBoard/AtomsBoard";
 
 
 const MoleculesBoard = () => {
-  const url = "https://disease.sh/v3/covid-19/all";
-  const { data } = useFetch(url + "countries");
+  const url = "https://disease.sh/v3/covid-19/";
+  const { data, loading } = useFetch(url + "countries");
   console.log(data);
   const myColumns = [
     {name: 'Flag',
@@ -49,12 +49,12 @@ const MoleculesBoard = () => {
         selector: "tests",
     },
   ];
-  if (data === null) {
-    return <> Loading </>;
-  }
+  // if (data === null) {
+  //   return <> Loading </>;
+  // }
   return (
-    <div className="max-w-screen-xl mx-auto">
-      <AtomsBoard data={data} columns={myColumns} />
+    <div className="">
+    {!loading ? <AtomsBoard data={data} columns={myColumns} /> : <p></p>}  
     </div>
   );
 };

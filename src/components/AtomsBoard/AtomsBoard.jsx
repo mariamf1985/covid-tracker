@@ -14,7 +14,7 @@ const AtomsBoard = (props) => {
   const columns = props.columns;
 
   return (
-    <div className="bg-white text-indigo-800 p-4 rounded shadow">
+    <div className="bg-white text-indigo-800 p-4 rounded shadow mt-[1px] snap-x">
       <input
         type="text"
         value={filterText}
