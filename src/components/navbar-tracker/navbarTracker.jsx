@@ -28,7 +28,7 @@ const NavbarTracker = () => {
   };
 
   return (
-    <nav className="flex flex-col items-center w-20 h-screen bg-primarybackground fixed top-0 left-0 border shadow">
+    <nav className="flex flex-col items-center h-screen w-20 bg-primarybackground fixed top-0 left-0 border shadow">
       <ul className="h-full flex flex-col items-center justify-around cursor-pointer	">
         <li onClick={() => handleNavItemClick("")}>
             <img src="../src/assets/images/coronavirus.png" className="animate-spin-slow w-12 mt-3 mb-3" alt="Coronavirus" />
