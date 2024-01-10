@@ -32,7 +32,7 @@ Este proyecto está licenciado bajo la Licencia MIT.
 
 Este proyecto ha sido creado por:
 
-- 🐈‍⬛ Nathalia Ruiz
+- 🐈‍Nathalia Ruiz
 - 🎨Maria Garcia
 - 🌈Maria Mendez
 - 🧠Marta Parra
