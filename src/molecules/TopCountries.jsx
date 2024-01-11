@@ -1,7 +1,8 @@
-import React from 'react'
-import UseFetch from "../../services/UseFetch";
+import React, { useEffect, useState } from 'react'
+import useFetch from '../services/UseFetch'
 import CountryCard from "../components/Cards/CountryCard";
-import "./TopCountries.css";
+
+
 
 // function TopCountries() {
 //   const urlCountries = "https://disease.sh/v3/covid-19/countries/";
@@ -22,32 +23,30 @@ import "./TopCountries.css";
 
 function TopCountries() {
   const urlCountries = "https://disease.sh/v3/covid-19/countries/";
-  const { data, loading } = UseFetch(urlCountries);
+  const { data, loading } = useFetch(urlCountries);
+  const [countriesByCases, setCountriesByCases] = useState([]);
 
-  if (loading) {
-    return <p>Loading...</p>;
-  }
+  useEffect(() => {
+    if (data) {
+        const sortedByCases = data.slice().sort((a, b) => b.cases - a.cases).slice(0, 10);
 
-  const sortedData = data?.sort((a, b) => b.cases - a.cases);
-  const topCountries = sortedData?.slice(0, 10);
+        setCountriesByCases(sortedByCases);
+     
+    }
+}, [data]);
+
 
   return (
     <>
-      {topCountries?.map((element) => (
-        <CountryCard
-        key={element.cases}
-        img_flags_value={element.countryInfo.flag}
-        img_country_style={"img_country"}
-        card_resum_style={"div_pais"}
-        card_resum_chip_style={"card_resum_chip"}
-        card_resum_chip_value={element.country}
-        card_resum_number_style={"total_cases"}
-        card_resum_number_value={element.cases}
-        />
-      ))}
+       {countriesByCases.map(countryInfo => (
+                        <CountryCard key={countryInfo.country} flag={countryInfo.countryInfo.flag} countryName={countryInfo.country} totalValue={countryInfo.cases} />
+                    ))}
+
     </>
   );
 }
+
+
 
 export default TopCountries;
 
