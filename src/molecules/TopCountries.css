@@ -1,0 +1,29 @@
+.container {
+    display:flex;
+    flex-direction: column;
+    width: 15%;
+    font-size: small;
+
+}
+
+.div_pais {
+    width: 80%;
+    display:flex;
+    align-items: center; 
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    box-shadow: 0 0 5px rgba(208, 78, 78, 0.2);
+    padding: 0 1rem;
+    color:#1712A6;
+    align-items: center;
+}
+
+.img_country {
+    width: 12%;
+    height: 12%;
+    margin-right: 1rem;
+}
+
+.total_cases {
+    margin-left: auto;
+}

@@ -1,13 +1,17 @@
 
 import './App.css'
 import NavbarTracker from './components/navbar-tracker/navbarTracker'
-
 import React from 'react'
-import NavbarTracker from './components/navbar-tracker/navbarTracker'
+import Tracker0 from './pages/tracker0/Tracker0'
+
+
 function App() {
   return (
     <>
-    <NavbarTracker/>
+    <div>
+      {/* <NavbarTracker/> */}
+      <Tracker0/>
+    </div>
     </>
   )
 }
