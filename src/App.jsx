@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      {/* <NavbarTracker/>  */}
+      <NavbarTracker/> 
       <Tracker2 />
     </>
   )
