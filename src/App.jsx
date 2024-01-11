@@ -1,14 +1,23 @@
-import './App.css'
+
 import React from 'react'
-import NavbarTracker from './components/navbar-tracker/navbarTracker'
-import Tracker2 from './pages/tracker-2/tracker-2'
+import './App.css'
+import NavbarTracker from './components/navbar-tracker/NavbarTracker'
+import AtomsBoard from '.././src/components/AtomsBoard/AtomsBoard'
+import MoleculesBoard from '.././src/components/MoleculesBoard/MoleculesBoard'
+import Traker3 from '../src/pages/tracker-3/Traker-3'
+
+
 
 function App() {
 
   return (
     <>
-      <NavbarTracker/> 
-      <Tracker2 />
+
+    <NavbarTracker/>
+    {/* <AtomsBoard/> */}
+    {/* <MoleculesBoard></MoleculesBoard> */}
+    <Traker3/>
+
     </>
   )
 }
