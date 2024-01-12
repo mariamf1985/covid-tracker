@@ -9,7 +9,7 @@ const Tracker0 = () => {
     const {data, loading} = useFetch(urlGlobalCases)
     
   return (
-    <div className='bg-withe w-[25.77%] ml-[80px] min-h-screen flex flex-col font-sans xl:w-[25.76%] max-[1270px]:hidden'>
+    <div className='bg-withe w-[25.77%] ml-[80px] min-h-screen flex flex-col font-sans xl:w-[25.76%] max-[1270px]:hidden fixed top-0'>
     <h1 className="text-4xl text-black font-bold ml-6 mt-4">COVID-19 Tracker</h1>
     <div className='flex flex-col items-center gap-3 mt-4'>
         

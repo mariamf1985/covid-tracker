@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import useFetch from '../services/UseFetch'
-import CountrySelect from '../components/selectors/CountrySelect'
-import VirusCardsBg from '../components/Cards/VirusCardsBg'
-import VirusCardsIcons from '../components/Cards/VirusCardsIcons'
-import map from '../assets/images/Tracker-1-map.png'
+import useFetch from '../../services/UseFetch'
+import CountrySelect from '../../components/selectors/CountrySelect'
+import VirusCardsBg from '../../components/Cards/VirusCardsBg'
+import VirusCardsIcons from '../../components/Cards/VirusCardsIcons'
+import map from '../../assets/images/Tracker-1-map.png'
 
 const Tracker1 = () => {
     const [selectedCountry, setSelectedCountry] = useState({});
