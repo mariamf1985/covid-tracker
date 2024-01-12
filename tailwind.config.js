@@ -22,7 +22,7 @@ export default {
         'spin-slow': 'spin 3s linear infinite',
       },
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
       }
     },
     extend: {

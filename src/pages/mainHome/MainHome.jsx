@@ -1,7 +1,14 @@
 import React from 'react';
 import './MainHome.css';
+import { useNavigate } from 'react-router-dom';
 
 const MainHome = () => {
+  const navigate = useNavigate();
+
+  const handleTrackerButtonClick = () => {
+    navigate('/tracker-1');
+  };
+
   return (
     <div className="main-home">
       <nav className="nav">
@@ -16,7 +23,7 @@ const MainHome = () => {
               <a href="#">Pages</a>
               <a href="#">About</a>
               <a href="#">Help</a>
-              <button href="tracker.html" className="tracker">Tracker</button> {}
+              <button className="tracker"  onClick={handleTrackerButtonClick}>Tracker</button> {}
             </div>
         </div>
       </nav>

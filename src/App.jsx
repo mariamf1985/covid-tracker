@@ -10,8 +10,8 @@ function App() {
 
   return (
     <>
-    <NavbarTracker/>
-    <Tracker0></Tracker0>
+    {/* <NavbarTracker/>
+    <Tracker0></Tracker0> */}
     <Router></Router>
     </>
   )

@@ -32,7 +32,7 @@ const Tracker2 = () => {
     }, [data]);
 
     return (
-        <div className='float-right bg-primarybackground p-2 flex flex-col items-start xl:w-[70%] lg:w-[92.5%] md:w-[90.5%] min-[375px]:w-[81.5%] max-[375px] h-screen'>
+        <div className='float-right bg-primarybackground p-2 flex flex-col items-start xl:w-[70%] lg:w-[92.5%] md:w-[90.5%] min-[375px]:w-[81.5%] max-[375px] min-h-screen border shadow font-[poppins]'>
             <h2 className='text-primaryLetterColor text-xl font-bold border-b-2 w-full mx-4 pb-2 md:w-[97.57%]'>Top 10 Country wise Covid-19 Updates - Tiles</h2>
             <div className='flex flex-col sm:flex-row pt-4 w-full snap-x'>
 
