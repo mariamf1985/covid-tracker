@@ -1,8 +1,7 @@
 import React from 'react'
 import useFetch from '../../services/UseFetch'
 import CounterCard from '../../components/Cards/CounterCard'
-import CountryCard from '../../components/Cards/CountryCard'
-import TopCountries from '../../molecules/TopCountries'
+import TopCountries from '../../components/molecules/TopCountries'
 
 
 const Tracker0 = () => {

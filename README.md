@@ -6,7 +6,7 @@
 Covid Tracker es una aplicación web desarrollada con JavaScript, React, Tailwind y CSS. Esta aplicación permite a los usuarios rastrear los casos de Covid-19 en tiempo real.
 
 ## 🔭Tecnologías utilizadas
-<img src="https://skillicons.dev/icons?i=html,css,js,tailwind,nodejs,react)](https://skillicons.dev"/>
+<img src="https://skillicons.dev/icons?i=html,css,js,tailwind,nodejs,react,)](https://skillicons.dev"/>
 
 ## 📋Guía de instalación 
 
