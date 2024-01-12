@@ -15,9 +15,9 @@ body, html {
   }
   
   .nav {
-    background: white;
+    background: rgb(255, 255, 255);
     color: #1d295d;
-    padding: 24px;
+    padding: 10px 70px;
     width: 100%;
   }
   
@@ -33,34 +33,44 @@ body, html {
   
   .nav-links {
     display: flex;
-    gap: 16px;
+    gap: 35px;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
   }
   
   .nav-links a {
     text-decoration: none;
-    color: #1749ae;
-    font-size: 18px;
+    color: #515184;
+    font-size: 15px;
+    font-weight: 500;
   }
   
   .nav-links a:hover {
     text-decoration: underline;
   }
   
-  .tracker, .protect-btn {
-    background: #1d295d;
+  .tracker {
+    background: #3639AE;
     color: white;
-    border-radius: 9999px;
-    padding: 12px 24px;
-    margin-bottom: 16px;
+    border-radius:20px;
+    padding: 10px 40px;
+    font-size: 14px;
+  }
+  .protect-btn{
+    background: #160e63;
+    color: white;
+    border: 1.5px solid #304aa0;
+    border-radius:50px;
+    padding: 18px 50px;
+    font-size: 12px;
+    font-weight: 500;
   }
   .tracker:hover, .protect-btn:hover {
-    background: #1749ae; 
+    background: #122672; 
   }
   
   .main-content {
-    padding: 24px;
+    padding: 50px 70px 80px  70px;
     display: flex;
     flex-grow: 1;
   }
@@ -70,7 +80,7 @@ body, html {
   }
   
   .text-content h1 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 16px;
   }
@@ -84,20 +94,19 @@ body, html {
   .image-content {
     width: 50%;
     float: right; 
+    display: flex;
+    justify-content: center;
 }
 
-.image-content img {
-    margin-top: 20px;
-    margin-left: auto; 
-    margin-right: auto; 
-    display: block; 
-    max-width: 100%; 
+.image-content img { 
+    width: 55%; 
     height: auto; 
 }
 
   
   .footer {
-    background: white;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
     color: #1d295d;
     padding: 24px;
     width: calc(100% - 4rem); 
@@ -110,10 +119,13 @@ body, html {
   .footer-icons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
 }
 
   .footer-icons > * {
-      margin: 0 100px;
+      width: 7%;
+      margin: 0 0px;
   }
 
 
