@@ -15,7 +15,7 @@ const NavbarTracker = () => {
   const navigationClickEvent = (navItem) => {
     navigate(`/${navItem}`)
   }
-  const [activeNavItem, setActiveNavItem] = useState(null);
+  const [activeNavItem, setActiveNavItem] = useState("tracker-1");
 
   const handleNavItemClick = (navItem) => {
     setActiveNavItem(navItem);
