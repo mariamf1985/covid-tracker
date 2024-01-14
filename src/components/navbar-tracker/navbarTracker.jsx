@@ -7,6 +7,7 @@ import { TfiLayoutTab,TfiLayersAlt,TfiStatsUp } from "react-icons/tfi";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { FaRegCommentAlt } from "react-icons/fa";
 import { IoLogoFlickr } from "react-icons/io5";
+import logoNav from '../src/assets/images/coronavirus.png';
 
 
 const NavbarTracker = () => {
@@ -31,7 +32,7 @@ const NavbarTracker = () => {
     <nav className="flex flex-col items-center h-screen w-20 bg-primarybackground fixed top-0 left-0 border shadow">
       <ul className="h-full flex flex-col items-center justify-around cursor-pointer	">
         <li onClick={() => handleNavItemClick("")}>
-            <img src="../src/assets/images/coronavirus.png" className="animate-spin-slow w-12 mt-3 mb-3" alt="Coronavirus" />
+            <img src={logoNav} className="animate-spin-slow w-12 mt-3 mb-3" alt="Coronavirus" />
         </li>
         <li onClick={() => handleNavItemClick("tracker-1")} className={getNavItemStyle("tracker-1")} >
             <RiPieChartLine size={27} />

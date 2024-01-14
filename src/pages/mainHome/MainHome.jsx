@@ -1,6 +1,13 @@
 import React from 'react';
 import './mainHome.css';
 import { useNavigate } from 'react-router-dom';
+import time from './src/assets/images/f1.png'; 
+import ocean from './src/assets/images/f2.png';
+import albero from './src/assets/images/f3.png';
+import dora from './src/assets/images/f4.png';
+import green from './src/assets/images/f5.png';
+import phone from './src/assets/images/phones.png';
+import logo from './src/assets/images/logo.png';
 
 const MainHome = () => {
   const navigate = useNavigate();
@@ -14,7 +21,7 @@ const MainHome = () => {
       <nav className="nav">
         <div className="nav-content">
           <div className="logo">
-            <img src="./src/assets/images/logo.png" alt="Logo" />
+            <img src={logo} alt="Logo" />
           </div>
           <div className="nav-links">
               <a href="#">Home <i className="fa fa-caret-down"></i></a>
@@ -35,18 +42,18 @@ const MainHome = () => {
           <button className="protect-btn">HOW TO PROTECT</button>
         </div>
         <div className="image-content">
-        <img src="./src/assets/images/phones.png"/>
+        <img src={phone}/>
 
         </div>
       </div>
       <footer className="footer">
         <div className="footer-icons">
-          <img src="./src/assets/images/f1.png" />
-          <img src="./src/assets/images/f2.png" />
-          <img src="./src/assets/images/f3.png" />
-          <img src="./src/assets/images/f4.png" />
-          <img src="./src/assets/images/f5.png" />
-          <img src="./src/assets/images/f1.png" />
+          <img src={time} />
+          <img src={ocean} />
+          <img src={albero} />
+          <img src={dora} />
+          <img src={green} />
+          <img src={time} />
         </div>
       </footer>
     </div>
