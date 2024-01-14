@@ -1,13 +1,13 @@
 import React from 'react';
 import './mainHome.css';
 import { useNavigate } from 'react-router-dom';
-import time from './src/assets/images/f1.png'; 
-import ocean from './src/assets/images/f2.png';
-import albero from './src/assets/images/f3.png';
-import dora from './src/assets/images/f4.png';
-import green from './src/assets/images/f5.png';
-import phone from './src/assets/images/phones.png';
-import logo from './src/assets/images/logo.png';
+import time from '../../assets/images/f1.png'; 
+import ocean from '../../assets/images/f2.png';
+import albero from '../../assets/images/f3.png';
+import dora from '../../assets/images/f4.png';
+import green from '../../assets/images/f5.png';
+import phone from '../../assets/images/phones.png';
+import logo from '../../assets/images/logo.png';
 
 const MainHome = () => {
   const navigate = useNavigate();

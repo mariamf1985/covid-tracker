@@ -7,8 +7,7 @@ import { TfiLayoutTab,TfiLayersAlt,TfiStatsUp } from "react-icons/tfi";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { FaRegCommentAlt } from "react-icons/fa";
 import { IoLogoFlickr } from "react-icons/io5";
-import logoNav from '../src/assets/images/coronavirus.png';
-
+import logoNav from '../../assets/images/coronavirus.png';
 
 const NavbarTracker = () => {
   const navigate = useNavigate()
