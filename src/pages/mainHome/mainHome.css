@@ -1,0 +1,132 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .main-home {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1baad4, #224e7e, #1d295d);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .nav {
+    background: rgb(255, 255, 255);
+    color: #1d295d;
+    padding: 10px 70px;
+    width: 100%;
+  }
+  
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 180px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #515184;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .tracker {
+    background: #3639AE;
+    color: white;
+    border-radius:20px;
+    padding: 10px 40px;
+    font-size: 14px;
+  }
+  .protect-btn{
+    background: #160e63;
+    color: white;
+    border: 1.5px solid #304aa0;
+    border-radius:50px;
+    padding: 18px 50px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .tracker:hover, .protect-btn:hover {
+    background: #122672; 
+  }
+  
+  .main-content {
+    padding: 50px 70px 80px  70px;
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .text-content {
+    width: 50%;
+  }
+  
+  .text-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .text-content p {
+    margin-bottom: 16px;
+  }
+  
+  
+  
+  .image-content {
+    width: 50%;
+    float: right; 
+    display: flex;
+    justify-content: center;
+}
+
+.image-content img { 
+    width: 55%; 
+    height: auto; 
+}
+
+  
+  .footer {
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: #1d295d;
+    padding: 24px;
+    width: calc(100% - 4rem); 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+}
+
+  .footer-icons > * {
+      width: 7%;
+      margin: 0 0px;
+  }
+
+
+  
