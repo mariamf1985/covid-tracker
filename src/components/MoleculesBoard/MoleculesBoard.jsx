@@ -49,9 +49,7 @@ const MoleculesBoard = () => {
         selector: "tests",
     },
   ];
-  // if (data === null) {
-  //   return <> Loading </>;
-  // }
+  
   return (
     <div className="">
     {!loading ? <AtomsBoard data={data} columns={myColumns} /> : <p></p>}  
